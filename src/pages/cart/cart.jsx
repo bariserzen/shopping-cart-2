@@ -28,18 +28,23 @@ const Cart = () => {
 
 
       <div className='cartItems'>
-        {PRODUCTS.map((product) => {
-          if (cartItems[product.id] !== 0) {
-            return <CartItem data={product}  />;
+        {PRODUCTS.map((product, index) => {
+
+        if (cartItems[product.id]  === 0) {
+        return null;
+         }
+        else {
+            return <CartItem  data={product} key={index} />;
           }
+          
         })}
       </div>
 
       {totalAmount > 0 ? ( 
-        <div className='checkout'>
+        <div className='checkout' >
         <p>Subtotal: $ {totalAmount} </p>
         <button onClick={() => navigate('/')}> Continue Shopping</button>
-        <button className='pay'> Checkout </button>
+        <button style={{background: 'green'}}> Checkout </button>
       </div>
       ) : (
         <h1 className='empty'> Your Cart is Empty</h1>
