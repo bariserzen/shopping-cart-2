@@ -29,26 +29,26 @@ export const PRODUCTS = [
     },
     {
       id: 4,
-      productName: "Jacket",
-      price: 128.0,
+      productName: "AirPods Pro",
+      price: 199.0,
       productImage: product4,
     },
     {
       id: 5,
-      productName: "LED Light Strips",
-      price: 19,
+      productName: "Nike sneaker",
+      price: 129,
       productImage: product5,
     },
     {
       id: 6,
-      productName: "SPECTRUM LS TEE",
+      productName: "Sweatshirt",
       price: 68.0,
       productImage: product6,
     },
     {
       id: 7,
-      productName: "AUTO SERVICE SHIRT",
-      price: 120.0,
+      productName: "Jacket",
+      price: 85.0,
       productImage: product7,
     },
     {

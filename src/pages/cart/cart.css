@@ -74,8 +74,16 @@
   }
 
   .cartItem .description {
-    margin-left: 40px;
+    margin-left: 50px;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  
+
+  .cartItem .description {
+    margin-left: 20px;
   }
 
   
